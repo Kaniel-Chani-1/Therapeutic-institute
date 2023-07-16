@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{926BCD76-3ABC-402F-9CE2-4CBEDF37CE63}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Word\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\City.cs" />
+    <Compile Include="BLL\CityTable.cs" />
+    <Compile Include="BLL\CupotCholim.cs" />
+    <Compile Include="BLL\CupotCholimTable.cs" />
+    <Compile Include="BLL\Customers.cs" />
+    <Compile Include="BLL\CustomersTable.cs" />
+    <Compile Include="BLL\Employess.cs" />
+    <Compile Include="BLL\EmployessTable.cs" />
+    <Compile Include="BLL\GeneralTable.cs" />
+    <Compile Include="BLL\Hitmachuiot.cs" />
+    <Compile Include="BLL\HitmachuiotTable.cs" />
+    <Compile Include="BLL\KabalatLakoach.cs" />
+    <Compile Include="BLL\KabalatLakoachTable.cs" />
+    <Compile Include="BLL\Kidomot.cs" />
+    <Compile Include="BLL\KidomotTable.cs" />
+    <Compile Include="BLL\PerutTipulBesidra.cs" />
+    <Compile Include="BLL\PerutTipulBesidraTable.cs" />
+    <Compile Include="BLL\SidratTipulim.cs" />
+    <Compile Include="BLL\SidratTipulimTable.cs" />
+    <Compile Include="BLL\Validation.cs" />
+    <Compile Include="DAL\Dal.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCityTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCityTable.Designer.cs">
+      <DependentUpon>FrmCityTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCnisatMazcira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCnisatMazcira.Designer.cs">
+      <DependentUpon>FrmCnisatMazcira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCnisatMetapel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCnisatMetapel.Designer.cs">
+      <DependentUpon>FrmCnisatMetapel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCnisatRoshTchum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCnisatRoshTchum.Designer.cs">
+      <DependentUpon>FrmCnisatRoshTchum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCupotCholimTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCupotCholimTable.Designer.cs">
+      <DependentUpon>FrmCupotCholimTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCustomers.Designer.cs">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmCustomersTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCustomersTable.Designer.cs">
+      <DependentUpon>FrmCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEmployess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEmployess.Designer.cs">
+      <DependentUpon>FrmEmployess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEmployessTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEmployessTable.Designer.cs">
+      <DependentUpon>FrmEmployessTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEshurMetupalim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEshurMetupalim.Designer.cs">
+      <DependentUpon>FrmEshurMetupalim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHitmachuiotTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHitmachuiotTable.Designer.cs">
+      <DependentUpon>FrmHitmachuiotTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHosafatTipulim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHosafatTipulim.Designer.cs">
+      <DependentUpon>FrmHosafatTipulim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmKidomotTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKidomotTable.Designer.cs">
+      <DependentUpon>FrmKidomotTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmLoPail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmLoPail.Designer.cs">
+      <DependentUpon>FrmLoPail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmMaharechetTorim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMaharechetTorim.Designer.cs">
+      <DependentUpon>FrmMaharechetTorim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPerutTipulimBesidra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPerutTipulimBesidra.Designer.cs">
+      <DependentUpon>FrmPerutTipulimBesidra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmSidratTipulim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmSidratTipulim.Designer.cs">
+      <DependentUpon>FrmSidratTipulim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmSidratTipulimVekvihatam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmSidratTipulimVekvihatam.Designer.cs">
+      <DependentUpon>FrmSidratTipulimVekvihatam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmTofesMazcira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmTofesMazcira.Designer.cs">
+      <DependentUpon>FrmTofesMazcira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmTorimLehayom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmTorimLehayom.Designer.cs">
+      <DependentUpon>FrmTorimLehayom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmYomanTorim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmYomanTorim.Designer.cs">
+      <DependentUpon>FrmYomanTorim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCityTable.resx">
+      <DependentUpon>FrmCityTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCnisatMazcira.resx">
+      <DependentUpon>FrmCnisatMazcira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCnisatMetapel.resx">
+      <DependentUpon>FrmCnisatMetapel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCnisatRoshTchum.resx">
+      <DependentUpon>FrmCnisatRoshTchum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCupotCholimTable.resx">
+      <DependentUpon>FrmCupotCholimTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCustomers.resx">
+      <DependentUpon>FrmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmCustomersTable.resx">
+      <DependentUpon>FrmCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEmployess.resx">
+      <DependentUpon>FrmEmployess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEmployessTable.resx">
+      <DependentUpon>FrmEmployessTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEshurMetupalim.resx">
+      <DependentUpon>FrmEshurMetupalim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHitmachuiotTable.resx">
+      <DependentUpon>FrmHitmachuiotTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHosafatTipulim.resx">
+      <DependentUpon>FrmHosafatTipulim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmKidomotTable.resx">
+      <DependentUpon>FrmKidomotTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmLoPail.resx">
+      <DependentUpon>FrmLoPail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmMaharechetTorim.resx">
+      <DependentUpon>FrmMaharechetTorim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPerutTipulimBesidra.resx">
+      <DependentUpon>FrmPerutTipulimBesidra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmSidratTipulim.resx">
+      <DependentUpon>FrmSidratTipulim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmSidratTipulimVekvihatam.resx">
+      <DependentUpon>FrmSidratTipulimVekvihatam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmTofesMazcira.resx">
+      <DependentUpon>FrmTofesMazcira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmTorimLehayom.resx">
+      <DependentUpon>FrmTorimLehayom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmYomanTorim.resx">
+      <DependentUpon>FrmYomanTorim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
